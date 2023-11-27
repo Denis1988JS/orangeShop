@@ -1,3 +1,4 @@
+/*Эффект - из nav меню открыть список ссылок, переворот стрелки */
 let rotateLine = 180;
 $(".list_of_goods").click(
 	function(){
@@ -6,5 +7,5 @@ $(".list_of_goods").click(
 		rotateLine +=180;
 		$(".nav_item_arrow").css({ transform: "rotate(" + rotateLine + "deg" })
 	}
-	
 )
+

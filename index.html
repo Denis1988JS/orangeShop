@@ -7,35 +7,21 @@
 	<link rel="stylesheet" href="./link/style/style.css">
 	<link rel="stylesheet" href="./link/style/min_style.css">
 	<link rel="stylesheet" href="./link/style/statick_style.css">
+	<link rel="stylesheet" href="./link/style/mobile_style.css">
 	<title>Магазин сантехники</title>
 </head>
 <body>
 	<div class="wrapper">
 
-		<div class="header_main_block">
-			<div class="header_block_bg">
-				<img src="./link/img/header/header_bg.svg" alt="фон" class="header_bg">
-			</div>
+		<div class="header_main_block">		
 			<div class="header_block_container">
 				<nav class="nav">
 					<div class="block_logo">
 						<a href="#" target="_blank"><img src="./link/img/header/logo.svg" alt="Логотип"></a>
 					</div>
-					<div class="block_nav_list">
-						<ul class="nav_list">
-							<li class="nav_item">
-								<a href="#" class="nav_item_link">О компании</a>
-							</li>
-							<li class="nav_item">
-								<a href="#" class="nav_item_link">О продукции</a>
-							</li>
-							<li class="nav_item list_of_goods">
-								Каталог товаров
-								<img src="./link/img/header/vector_list_of_good.svg" alt="" class="nav_item_arrow">
-
-							</li>
-						</ul>
-					</div>
+					<p class="title_nav">
+						Разработано в Германии. Сделано в России.
+					</p>
 					<div class="nav_link">
 						<a href="tel:+7 (905) 543 23 45" class="nav_link_tel">+7 (905) 543 23 45</a>
 					</div>
@@ -58,48 +44,85 @@
 						</div>
 					</div>
 				</nav>
+				<div class="photo_slider_block">
 
-				<div class="catalog_of_goods_block_relative">
-					<div class="catalog_of_goods">
-						
-							<a href="#" class="catalog_items">
-								<div>
-									<img src="./link/img/header/Two-handle.svg" alt="Фото смеситель">
-								</div>
-								<p class="catalog_items_title">Смесители</p>
-							</a>
-						
-							<a href="#" class="catalog_items">
-								<div>
-									<img src="./link/img/header/Furniture.svg" alt="Фото мебель">
-								</div>
-								<p class="catalog_items_title">Мебель</p>
-							</a>
-						
-							<a href="#" class="catalog_items">
-								<div>
-									<img src="./link/img/header/douche.svg" alt="Фото душ">
-								</div>
-								<p class="catalog_items_title">Душевая программа</p>
-							</a>
-						
-							<a href="#" class="catalog_items">
-								<div>
-									<img src="./link/img/header/ceramics.svg" alt="Фото фаянс">
-								</div>
-								<p class="catalog_items_title">Фаянс</p>
-							</a>
-						
+					<div class="photo_slider_block_header">
+						<h2>Сантехника и мебель для ванной комнаты</h2>
+						<ul class="slider_header_list">
+							<li class="slider_header_items"><img src="./link/img/header/arrow_menu.svg" alt=""><a href="#">О компании</a></li>
+							<li class="slider_header_items"><img src="./link/img/header/arrow_menu.svg"><a href="#">О продукции</a></li>
+							<li class="slider_header_items"><img src="./link/img/header/arrow_menu.svg"><button>Каталог товаров</button></li>
+						</ul>
+					</div>
+
+					
+					<div class="photo_slider">
+						<img src="./link/img/header/slider_header/first_slide.png" alt="Слайд" class="header_slider_img">
 					</div>
 				</div>
+				
 			</div>
 		</div>
 		
 	</div>
-	
-	<script src="./link/script/jquery-3.6.0.min.js"></script>
-	<script src="./link/script/script.js">
 
-	</script>
+	<script src="./link/script/jquery-3.6.0.min.js"></script>
+	<script src="./link/script/script.js"></script>
+	
+
+
+
+<!--
+
+	для header - каталог товаров
+	
+	В nav
+	<div class="block_nav_list">
+						<ul class="nav_list">
+							<li class="nav_item">
+								<a href="#" class="nav_item_link">О компании</a>
+							</li>
+							<li class="nav_item">
+								<a href="#" class="nav_item_link">О продукции</a>
+							</li>
+							<li class="nav_item list_of_goods">
+								Каталог товаров
+								<img src="./link/img/header/vector_list_of_good.svg" alt="" class="nav_item_arrow">
+
+							</li>
+						</ul>
+	</div>
+
+	После nav
+	<div class="catalog_of_goods_block_relative">
+		<div class="catalog_of_goods">
+			<a href="#" class="catalog_items">
+				<div>
+					<img src="./link/img/header/Two-handle.svg" alt="Фото смеситель">
+				</div>
+				<p class="catalog_items_title">Смесители</p>
+			</a>
+			<a href="#" class="catalog_items">
+				<div>
+					<img src="./link/img/header/Furniture.svg" alt="Фото мебель">
+				</div>
+				<p class="catalog_items_title">Мебель</p>
+			</a>
+			<a href="#" class="catalog_items">
+				<div>
+					<img src="./link/img/header/douche.svg" alt="Фото душ">
+				</div>
+				<p class="catalog_items_title">Душевая программа</p>
+			</a>
+			<a href="#" class="catalog_items">
+				<div>
+					<img src="./link/img/header/ceramics.svg" alt="Фото фаянс">
+				</div>
+				<p class="catalog_items_title">Фаянс</p>
+			</a>
+		</div>
+	</div>
+
+-->
 </body>
 </html>

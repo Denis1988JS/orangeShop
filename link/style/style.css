@@ -10,28 +10,23 @@
 /*Шапка сайта--------------------------------------------------------------*/
 .header_main_block {
 	width: 100%;
-	height: auto;
+	height: 694px;
 	position: relative;
+	background-image: url('../img/header/header_bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
 }
-.header_block_bg {
-	width: 100%;
-	height: auto;
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: 0;
-}
-.header_bg {
-	width: 100%;
-	height: auto;
-	object-fit:contain;
-}
+
 .header_block_container {
 	max-width: 1440px;
-	height: auto;
+	height: 100%;
 	margin: 0px auto;
 	position: relative;
 	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /*блок nav - навигация сайта---------------------------------------------*/
@@ -43,6 +38,7 @@
 	align-items: center;
 	padding: 30px 40px;
 	gap: 36px;
+	z-index: 5;
 }
 .block_nav_list {
 	flex-shrink: 0;
@@ -53,6 +49,17 @@
 	justify-content: flex-start;
 	align-items: center;
 	gap: 25px;
+}
+.title_nav {
+	color: #939393;
+	font-family: PT Sans;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px; /* 111.111% */
+	flex-grow: 1;
+}
+.title_nav:hover {
+	color: #FFF;
 }
 .nav_item_link, .nav_item {
 	color: #BEBEBE;
@@ -135,7 +142,7 @@
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: auto;
+	max-height: 250px;
 	z-index: 10;
 	justify-content: space-between;
 	background: #FFF;
@@ -158,3 +165,78 @@
 	font-weight: 400;
 	line-height: normal;
 }
+
+
+/*Блок в навигации слайдер - 3 фотки - вовод фоток*/
+.photo_slider_block {
+	width: 100%;
+	height: 128px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-grow: 1;
+	flex-shrink: 0;
+	position: relative;
+	flex-wrap: wrap;
+}
+.photo_slider {
+	max-width: 50%;
+	flex-shrink: 1;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.header_slider_img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.photo_slider_block_header {
+	max-width: 592px;
+	align-self: flex-start;
+}
+.photo_slider_block_header h2{
+	width: 100%;
+	color: #FFF;
+	font-family: Orenburg;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 64px; /* 121.212% */
+	padding: 97px 0px 30px;
+}
+.slider_header_list {
+	max-width: 375px;
+}
+.slider_header_items {
+	width: 100%;
+	padding: 25px 0px;
+	position: relative;
+}
+
+.slider_header_items:hover {
+	background: linear-gradient(90deg, #4B4B4B 0%, rgba(38, 38, 37, 0.00) 100%);
+}
+
+.slider_header_items a, .slider_header_items button {
+	margin: 0;
+	padding: 0;
+	color: #BEBEBE;
+	font-family: PT Sans;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 100% */
+	background: none;
+	margin-left: 20px;
+}
+.slider_header_items img {
+	position: absolute;
+	top:50%;
+	left:0;
+	transform:translate(-50%, -50%);
+}
+
+
+

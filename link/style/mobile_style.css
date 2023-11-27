@@ -1,0 +1,9 @@
+@media screen and (max-width: 1440px) {
+	.slider_item {
+   	padding: 16px 0px;
+	}
+	.title_nav {
+		font-size: 16px;
+	}
+	
+}
