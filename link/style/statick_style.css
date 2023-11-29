@@ -18,3 +18,39 @@
 	clear: left;
 	padding: 12px 0px;
 }
+
+.h2_some_block_title_32_pb_35{
+	color: #151716;
+	font-family: Orenburg;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px; /* 112.5% */
+	letter-spacing: -0.5px;
+	width: 100%;
+	padding-bottom: 35px;
+}
+
+.h3_18_white_pb_20 {
+	color: #FFF;
+	font-family: PT Sans;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 32px; /* 177.778% */
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+.price_cart {
+	width: 140px;
+	color: #FFF;
+	font-family: PT Sans;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px; /* 100% */
+	padding: 14px 0px 12px;
+	text-align: center;
+	background-color:  #FF7028;
+}

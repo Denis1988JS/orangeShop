@@ -36,7 +36,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 30px 40px;
+	padding: 30px 0px;
 	gap: 36px;
 	z-index: 5;
 }
@@ -180,7 +180,7 @@
 	flex-shrink: 0;
 	position: relative;
 	flex-wrap: wrap;
-	padding: 0px 40px;
+	padding: 0px 0px;
 }
 .photo_slider {
 	max-width: 50%;
@@ -337,3 +337,121 @@
 	background-repeat: no-repeat;
 }
 /*блок наша продукция*/
+.our_products_main {
+	width: 100%;
+	background: #FFF;
+}
+.our_products_block {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 80px 0px 100px;
+}
+.our_products_cart_list {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+.products_category {
+	width: 292px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.products_category_name {
+	position: absolute;
+	width: 220px;
+	border-top: 1px solid rgba(255, 255, 255, 0.20);
+	padding-top: 20px;
+	padding-bottom: 25px;
+	color: #FFF;
+	font-family: Orenburg;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	left:50%;
+	transform:translate(-50%, 0);
+}
+.img_cat_product {
+	object-fit: cover;
+	transition: 1s; 
+}
+.products_category:hover .img_cat_product{
+	transform: scale(1.2);
+}
+
+.footer {
+	height: 700px;
+}
+
+/*Стилизация блока - collection_info_section - коллекции + фото коллекции*/
+
+.collection_info_section {
+	width: 100%;
+	max-height: 665px;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(6, 7, 7, 0.85);
+	
+}
+.collection_dark_block, .collection_img_block {
+	clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
+	flex: 1 1 50%;
+}
+
+.collection_dark_block {
+	display: flex;
+	justify-content:flex-end;
+}
+.collection_dark_content {
+	max-width: 486px;
+	display: flex;
+	flex-direction: column;
+	
+	height: 100%;
+	margin-right: 114px;
+	padding-top: 67px;
+}
+.collection_info_title {
+	color: #FFF;
+	font-family: Orenburg;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 36px; /* 112.5% */
+	padding-bottom: 20px;
+}
+.collection_info_content {
+	color: #BEBEBE;
+	font-family: PT Sans;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px; /* 177.778% */
+	flex: 1 1 auto;
+}
+
+.collection_img_block {
+	position: relative;
+}
+.bg_collection_block {
+	left: 0;
+	top: 0;
+	width: 100%;
+	object-fit: contain;
+}
+.all_collection_link_block {
+	padding-bottom: 28px;
+}
+.collection_info {
+	position: absolute;
+	left: 65px;
+	top: 80px;
+
+}
