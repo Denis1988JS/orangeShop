@@ -6,8 +6,8 @@
 	height: auto;
 }
 
-
 /*Шапка сайта--------------------------------------------------------------*/
+
 .header_main_block {
 	width: 100%;
 	height: 694px;
@@ -17,7 +17,6 @@
 	background-size: cover;
 	background-position: left top;
 }
-
 .header_block_container {
 	max-width: 1440px;
 	height: 100%;
@@ -30,6 +29,7 @@
 }
 
 /*блок nav - навигация сайта---------------------------------------------*/
+
 .nav {
 	width: 100%;
 	height: 95px;
@@ -129,7 +129,6 @@
 	padding: 0;
 	background-color: inherit;
 }
-
 .nav a:hover,.nav li:hover  {
 	color: #FFF;
 }
@@ -166,8 +165,8 @@
 	line-height: normal;
 }
 
-
 /*Блок в навигации слайдер - 3 фотки - вовод фоток*/
+
 .photo_slider_block {
 	width: 100%;
 	height: 128px;
@@ -193,7 +192,6 @@
 	width: 100%;
 	object-fit: contain;
 }
-
 .photo_slider_block_header {
 	max-width: 592px;
 	align-self: flex-start;
@@ -219,11 +217,9 @@
 	padding: 25px 0px;
 	position: relative;
 }
-
 .slider_header_items:hover {
 	background: linear-gradient(90deg, #4B4B4B 0%, rgba(38, 38, 37, 0.00) 100%);
 }
-
 .slider_header_items a, .slider_header_items button {
 	margin: 0;
 	padding: 0;
@@ -261,7 +257,6 @@
 	background-color: rgba(245, 112, 44, 1);
 	width: 32px;
 }
-
 
 /*Стилизация блока main - основного контента сайта*/
 
@@ -336,7 +331,9 @@
 	background-image: url('../img/about_us_main_page/ecologi_icon.svg');
 	background-repeat: no-repeat;
 }
+
 /*блок наша продукция*/
+
 .our_products_main {
 	width: 100%;
 	background: #FFF;
@@ -386,7 +383,6 @@
 .products_category:hover .img_cat_product{
 	transform: scale(1.2);
 }
-
 .footer {
 	height: 700px;
 }
@@ -405,7 +401,6 @@
 	clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
 	flex: 1 1 50%;
 }
-
 .collection_dark_block {
 	display: flex;
 	justify-content:flex-end;
@@ -436,7 +431,6 @@
 	line-height: 32px; /* 177.778% */
 	flex: 1 1 auto;
 }
-
 .collection_img_block {
 	position: relative;
 }
@@ -454,4 +448,132 @@
 	left: 65px;
 	top: 80px;
 
+}
+
+/*Стилизация блока - promotional_goods_section - список акционных товаров*/
+
+.promotional_goods_section {
+	width: 100%;
+	height: auto;
+	background: #FFF;
+}
+.promotional_goods_block {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 80px 0px;
+	
+}
+.promotional_goods_block_list {
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px 0px;
+}
+.promotional_goods_cart {
+	flex: 0 1 300px;
+	height: 354px;
+	display: flex;
+	flex-direction: column;
+	padding: 24px 20px;
+	background: #FFF;
+	box-shadow: -1px 1px 0px 0px #ECECEC inset;
+	position: relative;
+	transition: all 0.9s;
+}
+.discount_value {
+	width: 60px;
+	padding: 8px 11px;
+	border-radius: 2px;
+	background: var(--background-orange, #FF7028);
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	color: #FFF;
+	text-align: center;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px; /* 125% */
+}
+.promotional_goods_cart:hover {
+	background-color: #f5f5f5;
+	transition: all 0.9s;
+}
+.promotional_goods_cart img {
+	width: 180px;
+	height: 188px;
+	object-fit: cover;
+	padding-bottom: 20px;
+}
+.promotional_goods_price {
+	color: var(--text-base, #151716);
+	font-family: PT Sans;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px; /* 100% */
+}
+
+.promotional_goods_old_price {
+	margin-left: 15px;
+	color: #A5A5A5;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 100% */
+}
+.promotional_goods_cart_title {
+	flex: 1 1 auto;
+}
+
+/*Стилизация блока - our_benefits_section - список преимуществ*/
+
+.our_benefits_section {
+	width: 100%;
+	height: auto;
+	background: #FFF;
+}
+.our_benefits_block {
+	max-width: 1200px;
+	margin: 0px auto;
+	
+}
+.our_benefits_list {
+	width: 100%;
+	height: auto;
+	padding: 54px 0px 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.benefits_item {
+	text-align: center;
+	max-width: 194px;
+}
+
+/*Стилизация блока promo_section - bg + блок описание */
+.promo_section {
+	width: 100%;
+	height: auto;
+}
+.bg_img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.promo_section_block {
+	margin: 0px auto;
+	max-width: 1200px;
+	position: relative;
+}
+.promo_content {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(246, 118, 26, 1);
+	padding: 42px 0px 47px ;
+	text-align: center;
+	left: 0;
+	top: -160px;
 }
