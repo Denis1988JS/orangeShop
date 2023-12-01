@@ -15,6 +15,7 @@
 	background-image: url('../img/header/header_bg.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 0px 40px;
 	background-position: left top;
 }
 .header_block_container {
@@ -274,6 +275,7 @@
 .about_us_main {
 	width: 100%;
 	background-color: #F6F6F6;
+	padding: 0px 40px;
 }
 .about_us_block {
 	max-width: 1200px;
@@ -341,7 +343,7 @@
 .our_products_block {
 	max-width: 1200px;
 	margin: 0px auto;
-	padding: 80px 0px 100px;
+	padding: 80px 40px 100px;
 }
 .our_products_cart_list {
 	width: 100%;
@@ -350,10 +352,10 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	gap: 10px;
-	flex-wrap: wrap;
 }
 .products_category {
-	width: 292px;
+	flex: 1 1 25%;
+	
 	height: 350px;
 	display: flex;
 	flex-direction: column;
@@ -363,10 +365,10 @@
 }
 .products_category_name {
 	position: absolute;
-	width: 220px;
+	width: 100%;
 	border-top: 1px solid rgba(255, 255, 255, 0.20);
-	padding-top: 20px;
-	padding-bottom: 25px;
+	
+	padding: 20px 20px 25px 20px;
 	color: #FFF;
 	font-family: Orenburg;
 	font-size: 20px;
@@ -392,11 +394,13 @@
 	display: flex;
 	justify-content: center;
 	background-color: rgba(6, 7, 7, 0.85);
-	
+	padding-left: 40px;
 }
 .collection_dark_block, .collection_img_block {
-	clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
 	flex: 1 1 50%;
+}
+.collection_img_block {
+	clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 .collection_dark_block {
 	display: flex;
@@ -406,7 +410,6 @@
 	max-width: 486px;
 	display: flex;
 	flex-direction: column;
-	
 	height: 100%;
 	margin-right: 114px;
 	padding-top: 67px;
@@ -422,7 +425,7 @@
 .collection_info_content {
 	color: #BEBEBE;
 	font-family: PT Sans;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.9712rem + 0.1282vw, 1.125rem);
 	font-style: normal;
 	font-weight: 400;
 	line-height: 32px; /* 177.778% */
@@ -453,6 +456,7 @@
 	width: 100%;
 	height: auto;
 	background: #FFF;
+	padding: 0px 40px;
 }
 .promotional_goods_block {
 	max-width: 1200px;
@@ -463,19 +467,22 @@
 .promotional_goods_block_list {
 	height: auto;
 	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	gap: 20px 0px;
+
 }
 .promotional_goods_cart {
-	flex: 0 1 300px;
+	flex: 0 1 25%;
 	height: 354px;
 	display: flex;
 	flex-direction: column;
-	padding: 24px 20px;
 	background: #FFF;
 	box-shadow: -1px 1px 0px 0px #ECECEC inset;
 	position: relative;
 	transition: all 0.9s;
+	padding: 24px 20px;
 }
 .discount_value {
 	width: 60px;
@@ -549,6 +556,11 @@
 	text-align: center;
 	max-width: 194px;
 }
+.benefits_item img {
+	width: 90px;
+	height: 90px;
+	object-fit: contain;
+}
 
 /*Стилизация блока promo_section - bg + блок описание */
 .promo_section {
@@ -573,6 +585,9 @@
 	text-align: center;
 	left: 0;
 	top: -160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*Подва л сайта - footer*/
@@ -595,6 +610,7 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	padding: 0px 40px;
 }
 .footer_items_list {
 	display: flex;

@@ -61,13 +61,13 @@
 	letter-spacing: -0.5px;
 }
 
-.p20_p24_12 {
+.p20-16_p24_12 {
 	color: var(--text-base, #151716);
 	text-align: center;
 	font-family: Orenburg;
-	font-size: 20px;
+	font-size: clamp(1rem, 0.9423rem + 0.2564vw, 1.25rem);
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: normal;
 	padding: 24px 0px 12px;
 }
@@ -75,7 +75,7 @@
 	color: #7B7B7B;
 	text-align: center;
 	font-family: PT Sans;
-	font-size: 15px;
+	font-size: clamp(0.75rem, 0.7067rem + 0.1923vw, 0.9375rem);
 	font-weight: 400;
 	line-height: 20px; /* 133.333% */
 }
@@ -83,7 +83,7 @@
 	color: #FFF;
 	text-align: center;
 	font-family: Orenburg;
-	font-size: 28px;
+	font-size: clamp(1.25rem, 1.1346rem + 0.5128vw, 1.75rem);
 	font-weight: 400;
 	line-height: 36px; /* 128.571% */
 	max-width: 763px;

@@ -1,11 +1,164 @@
-@media screen and (max-width: 1440px) {
+
+/*1400-1200-992-768-576*/
+
+
+
+
+/*Отдельно адаптив footer--------------------------------------*/
+/*Точка - 1200 px*/
+@media screen and (max-width: 1200px) {
 	.slider_item {
    	padding: 16px 0px;
 	}
 	.title_nav {
 		font-size: 16px;
 	}
-	.header_main_block,.about_us_main, .our_products_main  {
-		padding: 0px 40px;
+}
+
+/*Точка - 992px - footer - подвал сайта*/ 
+@media screen and (max-width: 992px) {
+	.footer {
+		height: auto;
+	}
+	.nav_footer {
+		gap: 32px 0px;
+	}
+	.footer_items_list, .block_logo_footer {
+		flex: 1 1 30%;
+	}
+	.nav_footer_list_block {
+		flex: 1 1 50%;
+	}
+}
+/*Точка - 578px - footer - подвал сайта*/ 
+@media screen and (max-width: 578px) {
+	.nav_footer {
+		padding: 0px 15px;
+		gap: 0;
+	}
+	.footer_items_list{
+		padding: 32px 0px;
+	}
+	.block_logo_footer , .nav_footer_list_block{
+		flex: 1 1 100%;
+		padding: 32px 0px;
+	}
+	.nav_footer_list_block{
+		border-top: 1px solid  #2C2D2E;
+		border-bottom: 1px solid  #2C2D2E;
+	}
+	.footer_info {
+		justify-content: space-between;
+		margin: 0;
+		padding-top: 0;
+		padding: 32px 0px;
+	}
+}
+
+
+/*Отдельно адаптив promo_section --------------------------------*/
+@media screen and (max-width: 1200px) {
+	.promo_content {
+		padding: 32px 16px;
+		top: -136px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.promo_section {
+		padding-bottom: 136px;
+	}
+	.promo_content {
+		padding: 32px 16px;
+		top: 0;
+		bottom: -136px;
+	}
+}
+
+/*Отдельно адаптив our_benefits_section -------------------------*/
+@media screen and (max-width: 768px) {
+	.our_benefits_list {
+		gap: 30px 0px;
+		padding: 54px 15px 80px;
+	}
+	.benefits_item {
+		min-width: 100%;
+		flex: 1 1 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 20px;
+		
+	}
+	.benefits_item img {
+		width: 48px;
+		height: 48px;
+		object-fit: contain;
+	}
+	.benefits_item p {
+		text-align: left;
+		padding-top: 5px;
+	}
+}
+
+/*Отдельно адаптив promotional_goods_section -------------------------*/
+@media screen and (max-width: 992px) {
+	.promotional_goods_cart {
+		flex: 1 1 50%;
+	}
+}
+@media screen and (max-width: 576px) {
+	.promotional_goods_cart {
+		flex: 0 1 262px;
+	}
+}
+
+/*Отдельно адаптив collection_info_section ----------------------------*/
+@media screen and (max-width: 1200px) {
+	
+	.collection_dark_content {
+		padding-top: 30px;
+		margin-right: 30px;
+	}
+	.all_collection_link_block {
+		padding: 0;
+	}
+
+}
+@media screen and (max-width: 992px) {
+	.collection_info_section {
+		flex-wrap: wrap;
+		max-height: none;
+		padding: 0px;
+	}
+	.collection_dark_block , .collection_img_block {
+		flex: 1 1 100%;
+		justify-content: center;
+		clip-path: none;
+		
+	}
+	.collection_dark_block {
+		padding: 0px 15px;
+	}
+	.collection_dark_content {
+		max-width: none;
+	}
+}
+@media screen and (max-width: 768px) {
+	.collection_info_section {
+		flex-direction: column-reverse;
+
+	}
+	.collection_info_title {
+		padding-bottom: 16px;
+	}
+	.collection_dark_content {
+		padding-top: 30px;
+		margin-right: 30px;
+	}
+	.all_collection_link_block {
+		padding: 0;
+	}
+	.collection_info_content {
+		line-height: 28px;
 	}
 }
