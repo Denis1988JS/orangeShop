@@ -89,6 +89,16 @@
 	max-width: 763px;
 	margin: 0px auto;
 }
+.h3_16_white {
+	color: #FFF;
+	font-family: Orenburg;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+
 /*табличка с ценой товара - оранжевая без тени*/
 .price_cart {
 	width: 140px;
