@@ -146,7 +146,21 @@
 @media screen and (max-width: 768px) {
 	.collection_info_section {
 		flex-direction: column-reverse;
-
+	}
+	.collection_info {
+		left: 16px;
+		top: 16px;
+	}
+	.price_cart{
+		width: auto;
+		color: #FFF;
+		text-align: center;
+		font-family: PT Sans;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 20px; /* 100% */
+		padding: 7px 7px;
 	}
 	.collection_info_title {
 		padding-bottom: 16px;
@@ -160,5 +174,162 @@
 	}
 	.collection_info_content {
 		line-height: 28px;
+	}
+}
+
+/*Отдельно адаптив - title_info_section -------------------------------*/
+
+/*our_products_main*/
+
+@media screen and (max-width: 1200px) {
+	.products_category {
+		height: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.our_products_cart_list {
+		flex-wrap: wrap;
+	}
+	.products_category {
+		flex: 0 1 49%;
+		clip-path: none;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.our_products_block {
+		padding: 40px 20px 50px;
+	}
+	.products_category:hover .img_cat_product{
+	transform: scale(0.9);
+}
+	
+}
+@media screen and (max-width: 576px) {
+	.products_category {
+		flex: 1 1 100%;
+	}
+	
+}
+/*about_us_main*/
+@media screen and (max-width: 992px) {
+	.about_us_block {
+		gap: 110px;
+	}
+	.about_us_main {
+		padding: 0px 15px;
+	}
+}
+@media screen and (max-width: 576px) {
+	.about_us_block {
+		gap: 40px 0px;
+		flex-direction: column;
+	}
+	.about_us_items {
+		margin-left: 80px;
+	}
+}
+
+/*Отдельно адаптив - header_main_block - шапка/навигация сайта ------------------*/
+
+@media screen and (max-width: 1200px) {
+	.header_main_block {
+		
+	}
+	.photo_slider_block {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 992px) {
+	.header_main_block {
+		padding: 0px 15px;
+	}
+	.photo_slider_block_header h2 {
+		padding-top: 10px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.photo_slider_block_header {
+		flex: 1 1 100%;
+	}
+	.photo_slider_block {
+		padding: 0px 15px;
+	}
+	.photo_slider {
+		flex: 1 1 50%;
+		height: 50%;
+	}
+	.photo_slider img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/*header_main_block - адаптив навигации сайта*/
+
+@media screen and (max-width: 1200px) {
+	.nav_link {
+		margin-right: 16px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.nav_header {
+		flex-wrap: wrap;
+		height: auto;
+		align-items: center;
+		gap: 10px 0px;
+		padding: 15px 0px;
+	}
+	.nav_block_data {
+		flex: 0 1 100%;
+		justify-content: flex-end;
+	}
+	.block_logo{
+		flex: 0 1 30%;
+	}
+	.title_nav_block {
+		flex: 0 1 65%;
+	}
+	.title_nav_block {
+		text-align: end;
+	}
+}
+@media screen and (max-width: 576px) {
+	.header_main_block {
+		padding: 0;
+	}
+	.nav_header {
+		padding: 0;
+		gap: 20px;
+	}
+	.block_logo {
+		flex: 1 1 100%;
+		padding: 11px 15px;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #383838;;
+	}
+	.nav_menu {
+	display: flex;
+	padding: 6px 12px;
+	border-radius: 2px;
+	border: 1px solid #494949;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	color: #FFF;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px; /* 125% */
+	}
+	.photo_slider_block_header h2 {
+		width: 100%;
+		line-height: 40px;
+	}
+	.title_nav_block {
+		flex: 1 1 100%;
+		text-align: center;
 	}
 }
