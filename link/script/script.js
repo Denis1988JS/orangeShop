@@ -27,3 +27,53 @@ const intervalId = setInterval(function changeSliderPhoto() {
 	}
 	else return sliderCounter = -1;
 }, 5000)
+
+
+/*Загрузка и смена img - кнопка ссылка на корзину при смене ширины экрана */
+$(document).ready(function () {
+	if (window.innerWidth > 576) {
+	$('.cart_img').attr('src','./link/img/header/cart.svg')}
+	else if (window.innerWidth <= 576) {
+		$('.cart_img').attr('src', './link/img/header/cart_white.svg')
+	}
+	})
+
+let imgSelect = [
+	'./link/img/header/cart.svg',
+	'./link/img/header/cart_white.svg',
+];
+
+$(window).resize(function (){
+	if (window.innerWidth > 576) {
+		$('.cart_img').attr('src', './link/img/header/cart.svg')
+	}
+	else if (window.innerWidth <= 576) {
+		$('.cart_img').attr('src', './link/img/header/cart_white.svg')
+	}
+})
+
+/*Открыть закрыть мобильное меню*/
+
+let statusMenuList = ['close','open'];
+let statusMenu = statusMenuList[0];
+$('.nav_menu').on('click', function openMenu(e){
+	//открываем
+	if (statusMenu != 'open'){
+		statusMenu = statusMenuList[1];
+		$('.block_logo').css('padding-top',60+'px');
+		$('.nav_menu_img').attr('src','./link/img/header/ic-close-menu.svg');
+		$('.photo_slider_block').css('visibility', 'hidden');
+		$('.nav_block_data').css('visibility', 'visible');
+		console.log(statusMenu)
+	}
+	//закрываем
+	else if ( statusMenu == 'open') {
+		statusMenu = statusMenuList[0];
+		$('.block_logo').css('padding-top', 11 + 'px');
+		$('.nav_menu_img').attr('src', './link/img/header/nav_menu_open.svg');
+		$('.photo_slider_block').css('visibility', 'visible');
+		$('.nav_block_data').css('visibility', 'hidden')
+		console.log(statusMenu)
+	}
+})
+

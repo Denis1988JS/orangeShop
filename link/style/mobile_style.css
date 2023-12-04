@@ -295,18 +295,25 @@
 		text-align: end;
 	}
 }
+/*Мобильная адаптация меню*/
 @media screen and (max-width: 576px) {
+	.nav_menu_img {
+		width: 15px;
+		height: 15px;
+	}
 	.header_main_block {
 		padding: 0;
+		height: 540px;
 	}
 	.nav_header {
-		padding: 0;
+		padding: 0px 0px 0px;
 		gap: 20px;
 	}
 	.block_logo {
+		gap: 12px;
 		flex: 1 1 100%;
 		padding: 11px 15px;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
 		border-bottom: 1px solid #383838;;
 	}
@@ -323,6 +330,8 @@
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 20px; /* 125% */
+	z-index: 50;
+	cursor: pointer;
 	}
 	.photo_slider_block_header h2 {
 		width: 100%;
@@ -331,5 +340,71 @@
 	.title_nav_block {
 		flex: 1 1 100%;
 		text-align: center;
+		display: none;
 	}
+	.data_seach_btn_2 {
+		display: block;
+		flex: 1 1 auto;
+		text-align: right;
+	}
+	.seach_btn_2 {
+		margin: 0;
+		padding: 6px 8px;
+		border-radius: 2px;
+		border: 1px solid #494949;
+		background-color: inherit;
+	}
+	.data_seach_btn {
+		display: none;
+	}
+	.nav_block_data {
+		visibility: hidden;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	.data_cart {
+		position: absolute;
+		left: 0;
+		top: 0px;
+		width: 100%;
+		background-color: rgba(236, 113, 51, 1);
+		text-align: center;
+	}
+	.data_cart img{
+		fill:white;
+	}
+	.nav_link {
+		position: absolute;
+		bottom: 25px;
+		left: 15px;
+	}
+	.nav_link_tel:before {
+		content: '';
+		display: none;
+	}
+	.data_account {
+		position: absolute;
+		right: 15px;
+		bottom: 19px;
+	}
+	.block_nav_list {
+		position: absolute;
+		top: 150px;
+		left: 15px;
+		display: block;
+	}
+	.nav_list {
+		flex-direction: column;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
 }
