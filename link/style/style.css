@@ -59,6 +59,19 @@
 	align-items: center;
 	gap: 25px;
 }
+.list_of_category {
+	padding-top: 12px;
+	display: none;
+}
+
+.list_of_category li a {
+	color: #BEBEBE;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px; /* 200% */
+}
 .title_nav_block {
 	flex-grow: 1;
 	align-self: center;
@@ -129,10 +142,91 @@
 	border-radius: 2px;
 	border: 1px solid #494949;
 }
-
 .data_seach_btn_2 {
 	display: none;
 }
+
+
+/*Форма поиска на сайте -мобильная*/
+.form_seach_site {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+
+.form_seach {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 16px;
+	gap: 20px;
+}
+.form_header {
+	padding-top: 95px;
+	color: #FFF;
+	font-family: Orenburg;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px; /* 112.5% */
+	letter-spacing: -0.5px;
+}
+.seach {
+	width: 100%;
+	height: auto;
+	padding: 10px 12px;
+	border-radius: 2px;
+	border: 1px solid #FF7028;
+	background: #222225;
+	color: #FFF;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 150% */
+}
+.form_seach_buttons {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 15px;
+	flex: 1 1 100%;
+}
+.btn_close_form {
+	width: 162px;
+	border-radius: 2px;
+	border: 1px solid #494949;
+	background: #222225;
+	color: #FFF;
+	text-align: center;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px; /* 150% */
+	padding: 10px 20px;
+}
+.seach_btn_form {
+	width: 162px;
+	border-radius: 2px;
+	background: var(--background-orange, #FF7028);
+	padding: 10px 20px;
+	color: #FFF;
+	text-align: center;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px; /* 150% */
+}
+/**/
 .data_account:hover, .data_seach_btn:hover, .data_cart:hover {
 	opacity: 0.5;
 }

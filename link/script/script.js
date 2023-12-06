@@ -1,11 +1,25 @@
-/*Эффект - из nav меню открыть список ссылок, переворот стрелки */
+/*Эффект - из nav меню открыть список ссылок, переворот стрелки - открыть список категорий в мобильном меню */
 let rotateLine = 180;
+let statusMobileMenuList = [
+	'close',
+	'open',
+];
+let statusMobileMenu = statusMobileMenuList[0];
 $(".list_of_goods").click(
+	
 	function(){
-		$(".catalog_of_goods").slideToggle();
-		$(".catalog_of_goods").css("display","flex")
-		rotateLine +=180;
-		$(".nav_item_arrow").css({ transform: "rotate(" + rotateLine + "deg" })
+		if (statusMobileMenu != 'open'){
+			$('.list_of_category').css('display','block');
+			rotateLine +=180;
+			$(".nav_item_arrow").css({ transform: "rotate(" + rotateLine + "deg" })
+			statusMobileMenu = statusMobileMenuList[1];
+		}
+		else if (statusMobileMenu != 'close') {
+			$('.list_of_category').css('display', 'none');
+			rotateLine += 180;
+			$(".nav_item_arrow").css({ transform: "rotate(" + rotateLine + "deg" })
+			statusMobileMenu = statusMobileMenuList[0];
+		}
 	}
 )
 
@@ -54,26 +68,76 @@ $(window).resize(function (){
 
 /*Открыть закрыть мобильное меню*/
 
-let statusMenuList = ['close','open'];
-let statusMenu = statusMenuList[0];
+	let statusMenuList = ['close','open'];
+	let statusMenu = statusMenuList[0];
+
+	let statusFormList = ['close', 'open'];
+	let statusForm = statusFormList[0];
+
 $('.nav_menu').on('click', function openMenu(e){
-	//открываем
+		//открываем
 	if (statusMenu != 'open'){
 		statusMenu = statusMenuList[1];
+		
 		$('.block_logo').css('padding-top',60+'px');
 		$('.nav_menu_img').attr('src','./link/img/header/ic-close-menu.svg');
 		$('.photo_slider_block').css('visibility', 'hidden');
 		$('.nav_block_data').css('visibility', 'visible');
-		console.log(statusMenu)
+
+		//По умолчанию скрываем форму поиска - даже если она не открыта и ставим статус - закрыто
+		statusForm = statusFormList[0];
+		$('.form_seach_site').css('visibility', 'hidden')
 	}
 	//закрываем
 	else if ( statusMenu == 'open') {
 		statusMenu = statusMenuList[0];
+		
 		$('.block_logo').css('padding-top', 11 + 'px');
 		$('.nav_menu_img').attr('src', './link/img/header/nav_menu_open.svg');
 		$('.photo_slider_block').css('visibility', 'visible');
 		$('.nav_block_data').css('visibility', 'hidden')
-		console.log(statusMenu)
+
+		//По умолчанию скрываем форму поиска - даже если она не открыта и ставим статус - закрыто
+		statusForm = statusFormList[0];
+		$('.form_seach_site').css('visibility', 'hidden')
 	}
 })
 
+
+/*Открываем форму поиска - мобильный дисплей - data_seach_btn_2 */
+	
+$(".data_seach_btn_2").on('click', function(e){
+	if (statusForm != 'open') {
+		statusForm = statusFormList[1];
+		$('.block_logo').css('padding-top', 11 + 'px');
+		$('.photo_slider_block').css('visibility', 'hidden')
+		$('.form_seach_site').css('visibility', 'visible')
+
+		//По умолчанию скрываем мобильное меню - даже если она не открыта и ставим статус - закрыто
+		statusMenu = statusMenuList[0];
+		$('.nav_block_data').css('visibility', 'hidden')
+	}
+	else if (statusForm == 'open') {
+		statusForm = statusFormList[0];
+		$('.form_seach_site').css('visibility', 'hidden')
+		$('.nav_menu_img').attr('src', './link/img/header/nav_menu_open.svg');
+		$('.photo_slider_block').css('visibility', 'visible');
+
+		//По умолчанию скрываем мобильное меню - даже если она не открыта и ставим статус - закрыто
+		statusMenu = statusMenuList[0];
+		$('.nav_block_data').css('visibility', 'hidden')
+	}
+});
+//Закрываем форму по кнопке отмена в форме
+$('.btn_close_form').on('click', function(e){
+	if (statusForm == 'open') {
+		statusForm = statusFormList[0];
+		$('.form_seach_site').css('visibility', 'hidden')
+		$('.nav_menu_img').attr('src', './link/img/header/nav_menu_open.svg');
+		$('.photo_slider_block').css('visibility', 'visible');
+
+		//По умолчанию скрываем мобильное меню - даже если она не открыта и ставим статус - закрыто
+		statusMenu = statusMenuList[0];
+		$('.nav_block_data').css('visibility', 'hidden')
+	}
+})

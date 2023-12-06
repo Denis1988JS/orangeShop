@@ -346,6 +346,7 @@
 		display: block;
 		flex: 1 1 auto;
 		text-align: right;
+		z-index: 50;
 	}
 	.seach_btn_2 {
 		margin: 0;
@@ -353,6 +354,7 @@
 		border-radius: 2px;
 		border: 1px solid #494949;
 		background-color: inherit;
+		
 	}
 	.data_seach_btn {
 		display: none;
