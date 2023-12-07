@@ -141,3 +141,13 @@ $('.btn_close_form').on('click', function(e){
 		$('.nav_block_data').css('visibility', 'hidden')
 	}
 })
+
+/*Открываем форму поиска - desctop дисплей - data_seach_btn - через toggleclass */
+$('.data_seach_btn').on('click', function(e){
+	$('.form_seach_site').toggleClass('form_seach_site_desc');
+	$('.form_seach').toggleClass('form_seach_desc');
+	$('.form_header').toggleClass('form_header_desc');
+	$('.form_seach_buttons').toggleClass('form_seach_buttons_desc');
+	$('.btn_close_form').toggleClass('btn_close_form_desc');
+	$('.seach').toggleClass('seach_desc');
+})
