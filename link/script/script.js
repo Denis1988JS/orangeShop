@@ -151,3 +151,27 @@ $('.data_seach_btn').on('click', function(e){
 	$('.btn_close_form').toggleClass('btn_close_form_desc');
 	$('.seach').toggleClass('seach_desc');
 })
+
+
+
+
+
+/*Скрипты для страницы - Catalog of Goods*/
+//Открыть/скрыть панель меню - catalog_of_goods
+
+let listCatalogVisible = ['close', 'open',];
+let catalogVisibleStatus = listCatalogVisible[0];
+
+$(".nav_item_btn_big").on('click', function(e){
+	$('.nav_item_arrow_big').css('rotate','+=180deg')
+	if (catalogVisibleStatus != 'open'){
+		catalogVisibleStatus = listCatalogVisible[1]
+		$('.catalog_of_goods').css('display','flex');
+	}
+	else if (catalogVisibleStatus == 'open') {
+		catalogVisibleStatus = listCatalogVisible[0]
+		$('.catalog_of_goods').css('display', 'none')
+	}
+
+
+})

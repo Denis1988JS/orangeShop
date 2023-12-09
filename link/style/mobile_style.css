@@ -410,3 +410,18 @@
 	}
 
 }
+
+
+/*Страница ----------------- Catalog of Goods-----------------*/
+
+@media screen and (max-width: 1200px) {
+	.nav_item_link_big, .nav_item_btn_big {
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0;
+	}
+	.block_nav_list_big {
+		gap: 10px;
+	}
+
+}
