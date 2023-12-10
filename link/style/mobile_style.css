@@ -100,14 +100,14 @@
 	}
 }
 
-/*Отдельно адаптив promotional_goods_section -------------------------*/
+/*Отдельно адаптив promotional_goods_section + popular_goods_section -------------------------*/
 @media screen and (max-width: 992px) {
-	.promotional_goods_cart {
+	.promotional_goods_cart, .popular_goods_cart {
 		flex: 1 1 50%;
 	}
 }
 @media screen and (max-width: 576px) {
-	.promotional_goods_cart {
+	.promotional_goods_cart, .popular_goods_cart {
 		flex: 0 1 262px;
 	}
 }
@@ -182,6 +182,9 @@
 /*our_products_main*/
 
 @media screen and (max-width: 1200px) {
+	.promotional_goods_section, .popular_goods_section, .our_products_block  {
+		padding: 0px 20px;
+	}
 	.products_category {
 		height: 100%;
 	}

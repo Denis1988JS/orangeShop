@@ -64,3 +64,87 @@
 .header_block_container {
 	flex-direction: row;
 }
+
+/*Секция страницы - популярные товары - popular_goods_section */
+.popular_goods_section {
+	width: 100%;
+	height: auto;
+	background: #FFF;
+	padding: 0px 40px;
+}
+.popular_goods_block {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 80px 0px;
+	
+}
+.popular_goods_block_list {
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 20px 0px;
+
+}
+.popular_goods_cart {
+	flex: 0 1 25%;
+	height: 354px;
+	display: flex;
+	flex-direction: column;
+	background: #FFF;
+	box-shadow: -1px 1px 0px 0px #ECECEC inset;
+	position: relative;
+	transition: all 0.9s;
+	padding: 24px 20px;
+}
+.discount_value {
+	width: 60px;
+	padding: 8px 11px;
+	border-radius: 2px;
+	background: var(--background-orange, #FF7028);
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	color: #FFF;
+	text-align: center;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px; /* 125% */
+}
+.popular_goods_cart:hover {
+	background-color: #f5f5f5;
+	transition: all 0.9s;
+}
+.popular_goods_cart img {
+	width: 180px;
+	height: 188px;
+	object-fit: cover;
+	padding-bottom: 20px;
+}
+.popular_goods_price {
+	color: var(--text-base, #151716);
+	font-family: PT Sans;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px; /* 100% */
+}
+
+.popular_goods_old_price {
+	margin-left: 15px;
+	color: #A5A5A5;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 100% */
+}
+.popular_goods_cart_title {
+	flex: 1 1 auto;
+}
+.photo_slider_block {
+	display: none;
+}
+

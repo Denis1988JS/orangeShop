@@ -154,9 +154,7 @@ $('.data_seach_btn').on('click', function(e){
 
 
 
-
-
-/*Скрипты для страницы - Catalog of Goods*/
+/*Скрипты для страницы - Catalog of Goods------------------------*/
 //Открыть/скрыть панель меню - catalog_of_goods
 
 let listCatalogVisible = ['close', 'open',];

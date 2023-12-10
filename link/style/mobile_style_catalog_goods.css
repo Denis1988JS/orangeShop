@@ -1,0 +1,27 @@
+/*----------------Мобильный адаптив для страницы catalog-goods-----------*/
+
+/*Мобильный стиль для header_main_block - на странице catalog-goods*/
+
+@media screen and (max-width: 1200px) {
+	.nav_header {
+		gap: 20px;
+	}
+}
+@media screen and (max-width: 576px) {
+	.header_block_container {
+		max-width: 1440px;
+		height: 100%;
+		margin: 0px auto;
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.block_nav_list_big {
+		display: none;
+	}
+	.photo_slider_block {
+		display: flex;
+	}
+}
