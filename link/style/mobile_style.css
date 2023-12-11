@@ -105,6 +105,9 @@
 	.promotional_goods_cart, .popular_goods_cart {
 		flex: 1 1 50%;
 	}
+	.adres_info_block {
+		padding: 20px 15px;
+	}
 }
 @media screen and (max-width: 576px) {
 	.promotional_goods_cart, .popular_goods_cart {

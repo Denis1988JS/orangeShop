@@ -833,3 +833,9 @@
 	font-weight: 400;
 	line-height: normal;
 }
+
+/*Стиль для события клик открыть поиск или список категорий*/
+.main_opasity {
+	opacity: 0.3;
+	background: #000;
+}

@@ -150,6 +150,7 @@ $('.data_seach_btn').on('click', function(e){
 	$('.form_seach_buttons').toggleClass('form_seach_buttons_desc');
 	$('.btn_close_form').toggleClass('btn_close_form_desc');
 	$('.seach').toggleClass('seach_desc');
+	$('main').toggleClass('main_opasity')
 })
 
 
@@ -165,10 +166,12 @@ $(".nav_item_btn_big").on('click', function(e){
 	if (catalogVisibleStatus != 'open'){
 		catalogVisibleStatus = listCatalogVisible[1]
 		$('.catalog_of_goods').css('display','flex');
+		$('main').addClass('main_opasity')
 	}
 	else if (catalogVisibleStatus == 'open') {
 		catalogVisibleStatus = listCatalogVisible[0]
 		$('.catalog_of_goods').css('display', 'none')
+		$('main').removeClass('main_opasity')
 	}
 
 
