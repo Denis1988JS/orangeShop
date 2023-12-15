@@ -173,6 +173,5 @@ $(".nav_item_btn_big").on('click', function(e){
 		$('.catalog_of_goods').css('display', 'none')
 		$('main').removeClass('main_opasity')
 	}
-
-
 })
+

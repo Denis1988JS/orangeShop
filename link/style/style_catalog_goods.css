@@ -172,3 +172,209 @@
 	font-weight: 400;
 	line-height: 22px; /* 137.5% */
 }
+
+/*Стили для страницы category-----------------*/
+.title_info_block {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 50px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 32px 36px;
+	flex-wrap: wrap;
+}
+.title_info_header{
+	flex:  1 1 100%;
+}
+.checked_main_block {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.checked_block {
+	height: 44px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+}
+.check_btn {
+	color: var(--text-link, #FE5B00);
+	font-family: PT Sans;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 155.556% */
+	padding: 0;
+	margin: 0;
+	background: inherit;
+}
+.select_button_block {
+	border: 1px solid #D9D9D9;
+}
+.select_button {
+	color: var(--text-base, #151716);
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 150% */
+	background-color: inherit;
+	padding: 10px 65px 10px 12px;
+	position: relative;
+}
+.select_button::after {
+	content: '';
+	position: absolute;
+	background-image: url('../img/category/Select.svg');
+	display: block;
+	width: 6px;
+	height: 14px;
+	top:50%;
+	right:15px;
+	transform:translate(0%, -50%);
+}
+.site_bar {
+	max-width: 294px;
+	flex-grow: 1;
+	flex-shrink: 3;
+	height: 679px;
+	border: 2px solid rgba(254, 91, 0, 1);
+	padding: 28px 28px 0px 28px;
+
+}
+
+.checkbox_block_filter {
+	width: 100%;
+	height: 100%;
+}
+.promo_goods_checkbox {
+	width: 100%;
+	border-bottom: 1px solid rgba(236, 236, 236, 1);
+	padding-bottom: 16px;
+}
+.promo_goods_checkbox input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+}
+
+.type_goods_checkbox {
+	width: 100%;
+	border-bottom: 1px solid rgba(236, 236, 236, 1);
+	padding-bottom: 16px;
+	padding-top: 32px;
+}
+.type_goods_checkbox input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+}
+.checkbox_container {
+	padding-top: 17px;
+}
+
+.color_goods_checkbox {
+	width: 100%;
+	border-bottom: 1px solid rgba(236, 236, 236, 1);
+	padding-bottom: 16px;
+	padding-top: 32px;
+}
+.checkbox_color_list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 17px;
+	gap: 17px 14px;
+}
+.check_color {
+	width: 26px;
+	height: 26px;
+	border: 1px solid rgba(196, 196, 196, 1);
+	border-radius: 26px;
+}
+/*Стили цветов для кнопок*/
+.chome {
+	background: linear-gradient(45deg,rgba(244, 244, 244, 1), rgba(223, 223, 223, 1), rgba(244, 244, 244, 1));
+}
+.bronze {
+	background: linear-gradient(45deg,rgba(200, 179, 140, 1), rgba(159, 137, 94, 1), rgba(200, 179, 140, 1));
+}
+.green {
+	background: linear-gradient(45deg,rgba(189, 221, 171, 1), rgba(215, 244, 198, 1), rgba(189, 221, 171, 1));
+	
+}
+.oak {
+	background: linear-gradient(45deg,rgba(75, 45, 35, 1), rgba(120, 74, 59, 1), rgba(75, 45, 35, 1));
+}
+.shtrokcs {
+	background: linear-gradient(45deg,rgba(133, 125, 112, 1), rgba(166, 158, 144, 1), rgba(133, 125, 112, 1));
+}
+.white {
+	background: rgba(255, 255, 255, 1);
+}
+.coconut {
+	background: linear-gradient(45deg,rgba(202, 131, 77, 1), rgba(228, 167, 121, 1), rgba(202, 131, 77, 1));
+}
+.black {
+	background: linear-gradient(45deg,rgba(39, 39, 39, 1), rgba(82, 82, 82, 1), rgba(39, 39, 39, 1));
+}
+.blue {
+	background: linear-gradient(45deg,rgba(171, 194, 195, 1), rgba(215, 231, 232, 1), rgba(171, 194, 195, 1));
+}
+.check_color:focus {
+	box-shadow: 0 0 7px 5px #FE5B00;
+}
+
+
+.category_goods_list_block {
+	max-width: 72.5%;
+	flex-grow: 3;
+	flex-shrink: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+.category_goods_cart {
+	flex: 0 1 33.33%;
+	height: 354px;
+	display: flex;
+	flex-direction: column;
+	background: #FFF;
+	box-shadow: -1px 1px 0px 0px #ECECEC inset;
+	position: relative;
+	transition: all 0.9s;
+	padding: 24px 20px;
+}
+
+.category_goods_cart:hover {
+	background-color: #f5f5f5;
+	transition: all 0.9s;
+}
+.category_goods_cart img {
+	width: 180px;
+	height: 188px;
+	object-fit: cover;
+	padding-bottom: 20px;
+}
+.category_goods_price {
+	color: var(--text-base, #151716);
+	font-family: PT Sans;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px; /* 100% */
+}
+
+.category_goods_old_price {
+	margin-left: 15px;
+	color: #A5A5A5;
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 100% */
+}
+.category_goods_cart_title {
+	flex: 1 1 auto;
+}

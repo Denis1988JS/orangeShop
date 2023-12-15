@@ -30,6 +30,17 @@
 	width: 100%;
 	padding-bottom: 35px;
 }
+.h2_some_block_title_32_pb_6{
+	color: #151716;
+	font-family: Orenburg;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px; /* 112.5% */
+	letter-spacing: -0.5px;
+	width: 100%;
+	padding-bottom: 6px;
+}
 
 .h3_18_white_pb_20 {
 	color: #FFF;
@@ -97,7 +108,15 @@
 	font-weight: 700;
 	line-height: normal;
 }
-
+.p16_bold {
+	color: var(--Text-Base, #151716);
+	font-family: Orenburg;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.2px;
+}
 
 /*табличка с ценой товара - оранжевая без тени*/
 .price_cart {
