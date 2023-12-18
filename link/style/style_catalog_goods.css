@@ -151,12 +151,13 @@
 /* Стиль для адресной строки */
 .adres_info_section {
 	width: 100%;
+	padding: 0px 40px;
 	height: auto;
 	border-bottom: 1px solid grey;
 }
 .adres_info_block {
 	max-width: 1440px;
-	padding: 20px 40px;
+	padding: 20px 0px;
 	margin: 0px auto;
 	display: flex;
 	justify-content: flex-start;
@@ -174,6 +175,11 @@
 }
 
 /*Стили для страницы category-----------------*/
+.title_info_block_main {
+	width: 100%;
+	height: auto;
+	padding: 0px 40px;
+}
 .title_info_block {
 	max-width: 1200px;
 	margin: 0px auto;
@@ -329,11 +335,13 @@
 
 
 .category_goods_list_block {
-	max-width: 72.5%;
+	max-width: 870px;
 	flex-grow: 3;
 	flex-shrink: 1;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 .category_goods_cart {
 	flex: 0 1 33.33%;
