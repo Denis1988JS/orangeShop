@@ -117,6 +117,14 @@
 	line-height: normal;
 	letter-spacing: 0.2px;
 }
+.h3_20 {
+	color: var(--Text-Base, #151716);
+	font-family: Orenburg;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 140% */
+}
 
 /*табличка с ценой товара - оранжевая без тени*/
 .price_cart {

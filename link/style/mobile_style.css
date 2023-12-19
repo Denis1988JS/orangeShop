@@ -134,13 +134,15 @@
 		flex: 1 1 100%;
 		justify-content: center;
 		clip-path: none;
-		
 	}
 	.collection_dark_block {
 		padding: 0px 15px;
 	}
 	.collection_dark_content {
 		max-width: none;
+	}
+	.category_main_block {
+		padding: 30px 20px;
 	}
 }
 @media screen and (max-width: 768px) {

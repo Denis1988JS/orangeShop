@@ -386,3 +386,61 @@
 .category_goods_cart_title {
 	flex: 1 1 auto;
 }
+
+/*Блок характеристика категории - category_main_block---*/
+.category_main_block {
+	width: 100%;
+	height: auto;
+	border-radius: 2px;
+	background: #F6F6F6;
+	padding: 60px 40px;
+}
+.category_block {
+	max-width: 1200px;
+	height: auto;
+	margin: 0px auto;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 0px 70px;
+}
+.flex_100 {
+	flex: 1 1 100%;
+}
+.pd_top_40 {
+	padding-top: 40px;
+}
+.category_content {
+	max-width: 560px;
+	flex: 0 1 auto;
+	color: var(--Text-Base, #151716);
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 175% */
+}
+.category_content a {
+	color: var(--Text-Link, #FE5B00);
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+}
+.category_content_list_benefits {
+	padding-top: 25px;
+}
+.category_content_item_benefits {
+	margin-bottom: 15px;
+	color: var(--Text-Base, #151716);
+	font-family: PT Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 175% */
+}
+.category_content_item_benefits::before {
+	content: url('../img/category/Polygon.svg');
+	margin-right: 16px;
+}
