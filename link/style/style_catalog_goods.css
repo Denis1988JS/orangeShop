@@ -75,16 +75,16 @@
 .popular_goods_block {
 	max-width: 1200px;
 	margin: 0px auto;
-	padding: 80px 0px;
+	padding: 80px 0px 25px 0px;
 	
 }
 .popular_goods_block_list {
 	height: auto;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	gap: 20px 0px;
+	
 
 }
 .popular_goods_cart {
@@ -162,6 +162,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 10px;
 	
 }

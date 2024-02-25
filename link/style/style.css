@@ -481,9 +481,11 @@
 	align-items: flex-start;
 	gap: 10px;
 }
-.products_category {
+.products_category_link {
 	flex: 1 1 25%;
-	
+	max-height: 350px;
+}
+.products_category {
 	height: 350px;
 	display: flex;
 	flex-direction: column;
@@ -495,7 +497,6 @@
 	position: absolute;
 	width: 100%;
 	border-top: 1px solid rgba(255, 255, 255, 0.20);
-	
 	padding: 20px 20px 25px 20px;
 	color: #FFF;
 	font-family: Orenburg;
@@ -838,4 +839,32 @@
 .main_opasity {
 	opacity: 0.3;
 	background: #000;
+}
+
+/*Стиль - pagination_block блок - пагинация*/
+
+.pagination_block {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+	padding: 25px 0px 35px 0px;
+}
+.pagination_btn {
+	background-color: #F2F2F2;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 133%;
+	padding: 9px 14px;
+	border-radius: 4px;
+	color: #656B72;
+	border: 2px solid #F2F2F2;
+}
+.pagination_btn:hover {
+	background-color: #EC9F76;
+}
+.orange_border {
+	border: 2px solid #FF7028;
 }

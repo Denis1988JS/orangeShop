@@ -100,15 +100,18 @@
 /*Отдельно адаптив promotional_goods_section + popular_goods_section -------------------------*/
 @media screen and (max-width: 992px) {
 	.promotional_goods_cart, .popular_goods_cart {
-		flex: 1 1 50%;
+		flex: 0 1 50%;
 	}
 	.adres_info_block {
 		padding: 20px 15px;
 	}
 }
 @media screen and (max-width: 576px) {
+	.popular_goods_block_list {
+		justify-content: center;
+	}
 	.promotional_goods_cart, .popular_goods_cart {
-		flex: 0 1 262px;
+		flex: 0 1 100%;
 	}
 }
 
@@ -184,19 +187,28 @@
 /*our_products_main*/
 
 @media screen and (max-width: 1200px) {
-	.promotional_goods_section, .popular_goods_section, .our_products_block  {
+	.promotional_goods_section, .popular_goods_section, .our_products_block {
 		padding: 0px 20px;
 	}
-	.products_category {
-		height: 100%;
+	.our_products_block {
+		padding: 20px 20px 40px
+	}
+	.about_us_block {
+		padding: 30px 0px 50px;
+	}
+	.promotional_goods_block {
+		padding: 40px 0px;
 	}
 }
 @media screen and (max-width: 768px) {
 	.our_products_cart_list {
 		flex-wrap: wrap;
 	}
-	.products_category {
+	.products_category_link {
 		flex: 0 1 49%;
+	}
+	.products_category {
+		width: 100%;
 		clip-path: none;
 		height: 200px;
 	}
@@ -212,9 +224,10 @@
 	
 }
 @media screen and (max-width: 576px) {
-	.products_category {
-		flex: 1 1 100%;
+	.products_category_link {
+		flex: 0 1 100%;
 	}
+
 	
 }
 /*about_us_main*/
