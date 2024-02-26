@@ -53,7 +53,7 @@
 		justify-content: space-between;
 	}
 	.category_goods_cart {
-		flex: 1 1 50%;
+		flex: 0 1 50%;
 	}
 	.checked_block {
 		flex-wrap: wrap;
@@ -84,6 +84,9 @@
 		align-self: flex-start;
 		min-width: 223px;
 		height: 44px;
+	}
+	.description_section {
+		padding: 30px 20px;
 	}
 }
 

@@ -414,6 +414,7 @@
 	gap: 199px;
 }
 .big_O {
+	padding-top: 10px;
 	padding-right: 12px;
 	float: left;
 }
@@ -467,11 +468,12 @@
 .our_products_main {
 	width: 100%;
 	background: #FFF;
+	padding: 0px 40px;
 }
 .our_products_block {
 	max-width: 1200px;
 	margin: 0px auto;
-	padding: 80px 20px 100px;
+	padding: 50px 0px 0px;
 }
 .our_products_cart_list {
 	width: 100%;
@@ -526,6 +528,7 @@
 	justify-content: center;
 	background-color: rgba(6, 7, 7, 0.85);
 	padding-left: 40px;
+	margin-top: 35px;
 }
 .collection_dark_block, .collection_img_block {
 	flex: 1 1 50%;
@@ -850,7 +853,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: 7px;
-	padding: 25px 0px 35px 0px;
+	padding: 35px 0px 35px 0px;
 }
 .pagination_btn {
 	background-color: #F2F2F2;

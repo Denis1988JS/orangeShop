@@ -154,7 +154,6 @@ $('.data_seach_btn').on('click', function(e){
 })
 
 
-
 /*Скрипты для страницы - Catalog of Goods------------------------*/
 //Открыть/скрыть панель меню - catalog_of_goods
 
@@ -173,5 +172,62 @@ $(".nav_item_btn_big").on('click', function(e){
 		$('.catalog_of_goods').css('display', 'none')
 		$('main').removeClass('main_opasity')
 	}
+})
+
+/*Загрузка списка коллекций в фильтрации товаров (6 колекций) */
+
+let list_collection = [
+	'Alfi', 'Archi', 'Aristo', 'Astin', 'Berti','Boni',
+	'Brueno','Verona','Oreo'
+];//Список коллекций
+let list_collection_len = list_collection.length;
+console.log(list_collection_len)
+//Загружаем 
+
+$(document).ready(function () {
+	//Мапим список из 6 коллекций в инпуты чекбоксы
+	list_collection.slice(0,6).map((e)=> {
+		
+		$('.collection_goods_checkbox').append(
+			`<div class="checkbox_container">
+				<input type="checkbox" name=${e} id="collection_name1_${e}">
+				<label for="collection_name1_${e}" class="p16_Sans">${e}</label>
+			</div>`
+		)
+	});
+	//Кнопку показать все коллекции + кол-во всех коллекций
+	$('.show_all_collection').text(`Все коллекции ( ${list_collection_len} )`)
+});
+
+//Событие клика на кнопку - отображаем все коллекции
+$('.show_all_collection').on('click', function(e){
+	list_collection.slice(6).map((e) => {
+		$('.collection_goods_checkbox').append(
+			`<div class="checkbox_container">
+				<input type="checkbox" name=${e} id="collection_name1_${e}">
+				<label for="collection_name1_${e}" class="p16_Sans">${e}</label>
+			</div>`
+		)
+	});
+	$('.show_all_collection').css('display','none');
+	$('.show_six_collection').css('display', 'block');
+	$('.show_six_collection').text(`Скрыть часть коллекций`)
+})
+
+//Событие клика на кнопку - убираем лишние коллекции - делаем список из 6
+$('.show_six_collection').on('click', function (e) {
+	$('.collection_goods_checkbox').empty();
+	$('.collection_goods_checkbox').append(`<p class="p16_bold">Коллекция</p>`)
+	list_collection.slice(0,6).map((e) => {
+		$('.collection_goods_checkbox').append(
+			`<div class="checkbox_container">
+				<input type="checkbox" name=${e} id="collection_name1_${e}">
+				<label for="collection_name1_${e}" class="p16_Sans">${e}</label>
+			</div>`
+		)
+	});
+
+	$('.show_all_collection').css('display', 'block');
+	$('.show_six_collection').css('display', 'none');
 })
 
