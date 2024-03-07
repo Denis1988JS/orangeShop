@@ -6,6 +6,22 @@
 	font-weight: 400;
 	line-height: 32px; /* 177.778% */
 }
+.p_18_Sans {
+	color: #151716;
+	font-family: PT Sans;
+	font-size: clamp(1rem, 0.9583rem + 0.1852vw, 1.125rem);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px; /* 177.778% */
+}
+.p_18_Sans_lite_grey {
+	color: #6F5F53;
+	font-family: PT Sans;
+	font-size: clamp(1rem, 0.9583rem + 0.1852vw, 1.125rem);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px; /* 177.778% */
+}
 .b_orange {
 	color: #FE5B00;
 	font-family: PT Sans;
@@ -13,6 +29,14 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: 32px; /* 177.778% */
+}
+.orange_lh24_18 {
+	color: #FE5B00;
+	font-family: PT Sans;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px; /* 177.778% */
 }
 .floatOff {
 	clear: left;
@@ -92,6 +116,19 @@
 	line-height: normal;
 	padding: 24px 0px 12px;
 }
+
+.p20-16_p0_0 {
+	color: var(--text-base, #151716);
+	text-align: center;
+	font-family: Orenburg;
+	font-size: clamp(1rem, 0.9423rem + 0.2564vw, 1.25rem);
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	padding: 0;
+}
+
+
 .p15_sans_grey {
 	color: #7B7B7B;
 	text-align: center;
@@ -110,6 +147,7 @@
 	max-width: 763px;
 	margin: 0px auto;
 }
+
 .h3_16_white {
 	color: #FFF;
 	font-family: Orenburg;
@@ -121,7 +159,7 @@
 .p16_bold {
 	color: var(--Text-Base, #151716);
 	font-family: Orenburg;
-	font-size: 16px;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -136,6 +174,21 @@
 	line-height: 28px; /* 140% */
 }
 
+.h3_20_sans {
+	color: var(--Text-Base, #424242);
+	font-family: PT Sans;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 140% */
+}
+.p15_sans_grey_left {
+	color: #7B7B7B;
+   font-family: PT Sans;
+   font-size: clamp(0.75rem, 0.7067rem + 0.1923vw, 0.9375rem);
+   font-weight: 400;
+   line-height: 20px;
+}
 /*табличка с ценой товара - оранжевая без тени*/
 .price_cart {
 	width: 140px;
@@ -149,3 +202,12 @@
 	background-color:  #FF7028;
 	text-align: center;
 }
+.letter_spasing_p::first-letter {
+	color: #FF7028;
+	font-size: 70px;
+	line-height: 24px;
+	float: left;
+	padding: 24px 10px 10px 0px;
+}
+
+

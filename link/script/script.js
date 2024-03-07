@@ -231,3 +231,14 @@ $('.show_six_collection').on('click', function (e) {
 	$('.show_six_collection').css('display', 'none');
 })
 
+/*Открыть/закрыть - benefits_list - описание преимущества */
+
+const rotation = (x) => {
+	$(x).children('.benefits_vector').css({ 'transform': 'rotate(' + 180 + 'deg)' })
+}
+$('.benefits_list').on('click', function(){
+	console.log(`${this}`)
+	$(this).children('.benefits_description').slideToggle()
+	$(this).children('.benefits_vector').toggleClass('rotated')
+})
+

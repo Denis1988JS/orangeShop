@@ -429,6 +429,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	line-height: normal;
+	padding-bottom: 10px;
 }
 .own_production , .ecologi {
 	position: relative;
@@ -640,7 +641,7 @@
 .promotional_goods_cart img {
 	width: 180px;
 	height: 188px;
-	object-fit: cover;
+	object-fit: contain;
 	padding-bottom: 20px;
 }
 .promotional_goods_price {
