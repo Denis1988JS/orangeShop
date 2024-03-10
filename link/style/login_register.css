@@ -1,3 +1,4 @@
+/*Стилизация авторизация и регистрация*/
 .section_form {
 	width: 100%;
 	height: auto;
@@ -8,7 +9,7 @@
 	max-width: 384px;
 	height: auto;
 	background-color: #fff;
-	padding: 25px 40px;
+	padding: 40px 30px;
 	border: 1px solid #D9D9D9;
 	border-radius: 8px;
 	margin: 0px auto;
@@ -74,4 +75,59 @@
    font-size: 15px;
    font-weight: 400;
 	line-height: 133%;
+}
+
+.links_block_social {
+	width: 100%;
+	height: auto;
+	padding: 20px 0px 25px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social_link {
+	border: 1px solid #E0E0E0;
+	border-radius: 3px;
+	width: 67px;
+	height: 44px;
+	text-align: center;
+	padding-top: 12px;
+}
+.social_link:hover {
+	background-color: #BEBEBE;
+}
+/*Стили для мобильных устройств - авторизация*/
+
+@media screen and (max-width: 576px) {
+	.section_form {
+		background-color: #FFFF;
+		padding: 20px 0px 25px 0px;
+	}
+	.block_form {
+		max-width: 100%;
+		border: none;
+		padding: 0px 15px;
+
+	}
+}
+
+/*Регистрация дополнительно*/
+.form_style h2 {
+	text-align: center;
+}
+.links_block_center {
+	width: 100%;
+	height: auto;
+	padding: 20px 0px 25px 0px;
+	border-bottom: 1px solid #E0E0E0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.links_block_center a {
+	color: var(--text-link, #FE5B00);
+   font-family: PT Sans;
+   font-size: 15px;
+   font-weight: 400;
 }
