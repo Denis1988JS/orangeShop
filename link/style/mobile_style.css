@@ -18,6 +18,7 @@
 /*Точка - 992px - footer - подвал сайта*/ 
 @media screen and (max-width: 992px) {
 	.footer {
+		padding-top: 30px;
 		height: auto;
 	}
 	.nav_footer {

@@ -140,9 +140,25 @@
 	color: #7B7B7B;
 	text-align: center;
 	font-family: PT Sans;
-	font-size: clamp(0.75rem, 0.7067rem + 0.1923vw, 0.9375rem);
+	font-size: 15px;
 	font-weight: 400;
 	line-height: 20px; /* 133.333% */
+}
+.p15_sans_grey_left {
+	color: #7B7B7B;
+	text-align: left;
+	font-family: PT Sans;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px; /* 133.333% */
+}
+.p_15_bold {
+	color: var(--text-base, #151716);
+	font-family: PT Sans;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px
 }
 .h3_28_white {
 	color: #FFF;
@@ -189,13 +205,7 @@
 	font-weight: 400;
 	line-height: 28px; /* 140% */
 }
-.p15_sans_grey_left {
-	color: #7B7B7B;
-   font-family: PT Sans;
-   font-size: clamp(0.75rem, 0.7067rem + 0.1923vw, 0.9375rem);
-   font-weight: 400;
-   line-height: 20px;
-}
+
 /*табличка с ценой товара - оранжевая без тени*/
 .price_cart {
 	width: 140px;
