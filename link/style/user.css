@@ -102,13 +102,6 @@
 	display: flex;
 	gap: 35px;
 }
-.cart_p_14 {
-	color: var(--text-secondary, #7B7B7B);
-   font-family: PT Sans;
-   font-size: 14px;
-   font-weight: 400;
-   line-height: 20px
-}
 .data_header {
 	flex: 0 1 72px;
 }
