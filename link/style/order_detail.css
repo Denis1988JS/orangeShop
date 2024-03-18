@@ -88,13 +88,14 @@
 	padding: 0px 25px;
 }
 .header_name_product {
-	flex: 5 1 auto;
+	flex: 4 1 auto;
 }
 .header_count_product {
 	flex: 1 1 70px;
 }
 .header_total {
-	flex: 0 1 100px;
+	flex: 0 1 70px;
+	text-align: right;
 }
 .user_order_list {
 	width: 100%;
@@ -116,16 +117,17 @@
 	object-fit: contain;
 }
 .user_order_info {
-	flex: 2 1 auto;
+	flex: 0 1 350px;
 }
 .user_order_info p:first-child {
 	padding-bottom: 10px;
 }
 .order_count {
-	flex: 1 1 70px;
+	flex: 0 1 70px;
 }
 .order_total {
 	flex: 0 1 100px;
+	text-align: right;
 }
 .user_order_total {
 	background-color: #FCFCFC;
@@ -189,6 +191,9 @@
 	cursor: pointer;
 	box-shadow: 5px 5px 0px #ffffff, 7px 7px 0px -1px #F6B492, 7px 3px 0px -1px #F6B492, 3px 7px 0px -1px #F6B492;
 }
+
+
+
 /*Мобильный адаптив*/
 
 /*Точка - 992px*/ 
