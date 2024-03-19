@@ -242,6 +242,29 @@ $('.benefits_list').on('click', function(){
 	$(this).children('.benefits_vector').toggleClass('rotated')
 })
 
+//Счетчик кол-ва товаров + или -
+
+//минус
+$('.product_counter_minus').on('click', function (e) {
+	let elem = e.target;
+	let nextElem = elem.nextElementSibling;
+	let nextElemVal = nextElem.innerText;
+	if (Number(nextElemVal)>1){
+		let counter = Number(nextElemVal) - 1 ;
+		nextElem.innerText = counter
+	}
+})
+
+//плюс
+$('.product_counter_plus').on('click', function (e) {
+	let elem = e.target;
+	let prevElem = elem.previousElementSibling;
+	let prevElemVal = prevElem.innerText;
+	let counter = Number(prevElemVal) + 1;
+	prevElem.innerText = counter
+})
+
+
 /*Кнопка  show_cupon_form - показать форму для промокода */
 let promo_code = 'ORANGELOVE'
 
@@ -268,6 +291,7 @@ $('*').bind('click', function (e) {
 		$('.send_promo_code').removeClass('send_promo_code_active').attr('disabled', true)
 	}
 })
+
 
 //Обработчик промокода
 $('.send_promo_code ').on('click', function(e){
