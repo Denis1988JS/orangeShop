@@ -10,8 +10,11 @@
 	<link rel="stylesheet" href="./link/style/statick_style.css">
 	<link rel="stylesheet" href="./link/style/mobile_style.css">
 	<link rel="stylesheet" href="./link/style/mobile_style_catalog_goods.css">
+	<link rel="stylesheet" href="./link/style/order_detail.css">
+	<link rel="stylesheet" href="./link/style/login_register.css">
+	<link rel="stylesheet" href="./link/style/user_cart.css">
 	<link rel="stylesheet" href="./link/style/user.css">
-	<title>Личный кабинет</title>
+	<title>Редактирование пользователя</title>
 </head>
 <body>
 	<div class="wrapper">
@@ -149,30 +152,34 @@
 				</div>
 			</div>
 		</header>
-		<main>
-			<section class="user_main_section">
-				<div class="user_main_block">
 
-					<div class="user_profile_block">
-						<div class="user_profile">
-							<img src="./link/img/profile/Ellipse.svg" alt="Аватар" class="avatar">
-							<div class="user_info">
-								<h2 class="p_18_Sans">Вячеслав Мороз</h2>
-								<p class="p15_sans_grey">slava@mail.ru</p>
-								<a href="./user_edit_page.html">Редактировать профиль</a>
-							</div>
+		<main>
+			<section class="section_form">
+				<div class="block_form">
+					<form action="#" class="form_style">
+						<div class="from_img_block">
+							<img src="./link/img/login_register/Layer 1.svg" alt="Логотип">
 						</div>
-						<div class="cart_empty">
-							<h2 class="p_18_Sans">У вас нет заказов</h2>
-							<button class="link_btn_a">
-								Перейти к покупкам
-							</button>
-						</div>
-					</div>
 					
+						<h2 class="h2_some_block_title_32_pb_0">Редактирование данных пользователя</h2>
+						<input type="text" name="first_name" id="first_name" class="form_imput" placeholder="Ваше имя" required
+							title="Имя">
+						<input type="text" name="second_name" id="second_name" class="form_imput" placeholder="Ваша фамилия" required title="Фамилия">
+						<input type="tel" name="tel" id="tel" class="form_imput" placeholder="89123457890" required
+							title="Номер телефона">
+						<input type="email" name="email" id="email" class="form_imput" placeholder="Электронная почта" required
+							title="mail@mail.ru">
+						<label class="input-file">
+							<input type="file" name="file">
+							<span class="input-file-btn">Выберите файл</span>
+							<span class="input-file-text">Фото аватарки</span>
+						</label>
+						<input type="submit" value="Внести данные" class="submit_btn">
+					</form>
 				</div>
 			</section>
 		</main>
+
 		<footer class="footer">
 			<div class="footer_nav_block">
 				<nav class="nav_footer">

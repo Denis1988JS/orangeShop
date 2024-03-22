@@ -308,4 +308,8 @@ $('.send_promo_code ').on('click', function(e){
 	}
 })
 
-
+//Стилизация инпут - фотография пользователя - редактирование пользователя
+$('.input-file input[type=file]').on('change', function () {
+	let file = this.files[0];
+	$(this).closest('.input-file').find('.input-file-text').html(file.name);
+});
