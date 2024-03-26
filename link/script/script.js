@@ -181,7 +181,7 @@ let list_collection = [
 	'Brueno','Verona','Oreo'
 ];//Список коллекций
 let list_collection_len = list_collection.length;
-console.log(list_collection_len)
+
 //Загружаем 
 
 $(document).ready(function () {
@@ -282,16 +282,18 @@ $('.cupon_form').bind('click blur',function(e){
 
 	}
 })
-//Убираем активные стили у формы
-$('*').bind('click', function (e) {
-	let promo_code_text = $('#promo_code').val()
-	if (promo_code_text.length == 0 && e.target.id != 'promo_code') {
-		$('.promo_code_disable').removeClass('promo_code_active');
-		$('.cupon_form').removeClass("cupon_form_active");
-		$('.send_promo_code').removeClass('send_promo_code_active').attr('disabled', true)
-	}
-})
-
+//Убираем активные стили у формы по условию если есть элемент с id = promo_code на страница, т.к. тогда ошибки на других страницах при отсутствии элемента
+let p_c = $('#promo_code')
+if (p_c==true){
+	$('*').bind('click', function (e) {
+			let promo_code_text = $('#promo_code').val()
+			if (promo_code_text.length == 0 && e.target.id != 'promo_code') {
+				$('.promo_code_disable').removeClass('promo_code_active');
+				$('.cupon_form').removeClass("cupon_form_active");
+				$('.send_promo_code').removeClass('send_promo_code_active').attr('disabled', true)
+		}
+	})
+}
 
 //Обработчик промокода
 $('.send_promo_code ').on('click', function(e){
@@ -313,3 +315,30 @@ $('.input-file input[type=file]').on('change', function () {
 	let file = this.files[0];
 	$(this).closest('.input-file').find('.input-file-text').html(file.name);
 });
+
+/*Работа с формой заказа */
+
+//открываем-скрываем  инпут (поле, кнопки, радио или чек боксы)
+$('.header_form_item').on('click', function (e) {
+	let a = $(this).siblings('.item_body')
+	a.slideToggle()
+})
+
+//Делаем radio - checked - для блок с чекбоксом
+$('.item_body').on('click', function(e){
+	//ищем радио , очищаем от чекед а затем делаем чекед тому на кого клик
+	let radioList = $(this).find('.radio_data')
+	radioList.map((r) => $(radioList[r]).removeAttr('checked'))
+	if (e.target.className == 'radio_data') {
+		$(e.target).attr('checked','true')
+	}
+	//ищем родителя для смены стиля
+	let e_target_parent = $(this).parent('.order_form_item')
+	let radioData = $(e_target_parent).find('.radio_data:checked')
+	if (radioData) {
+		$(e_target_parent).addClass('order_form_item_checked')
+		$(e_target_parent).find('.checked_item_form').addClass('checked_item_form_checked')
+	}
+
+})
+

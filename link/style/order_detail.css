@@ -252,6 +252,7 @@
 	.user_order_list {
 		padding: 0px 20px;
 	}
+	
 	.user_order_item {
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -262,6 +263,8 @@
 		margin-bottom: 25px;
 		border: none;
 	}
+
+
 	.user_order_info {
 		flex: 0 1 auto;
 		width: 187px;
