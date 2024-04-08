@@ -1,0 +1,22 @@
+Не используются..... HTML  копии если удалю основные
+								<!--Доставка курьером или почтой-->
+								<!--
+								<div class="courier_or_post_delivery">
+									<div class="item_body">
+										<input type="text" id="full_name" class="form_imput_adress full_name" placeholder="ФИО получателя" value="" />
+									</div>
+									<div class="item_body">
+										<label for="tell" class="label_block">+7</label>
+										<input type="tel" id="tell" name="tell" class="form_imput_tell phone" placeholder="Телефон" value="" />
+									</div>
+									<div class="item_body">
+										<input type="text" id="street" name="street" class="form_imput_street street" placeholder="Улица" value="" />
+									</div>
+									<div class="item_body">
+										<div class="item_body_flex">
+											<input type="text" id="ind_city" name="ind_city" class="form_imput_street ind_city" placeholder="Индекс" value="" />
+											<input type="text" id="home" name="home" class="form_imput_street home" placeholder="Дом" value="" />
+											<input type="text" id="flat" name="flat" class="form_imput_street flat" placeholder="Квартира" value="" />
+										</div>
+									</div>
+								</div>

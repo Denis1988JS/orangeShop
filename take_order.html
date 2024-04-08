@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="./link/style/mobile_style_catalog_goods.css">
 	<link rel="stylesheet" href="./link/style/order_detail.css">
 	<link rel="stylesheet" href="./link/style/take_order.css">
+	<link rel="stylesheet" href="./link/style/autocomplite.css">
+	<link rel="stylesheet" href="./link/style/order_detail_mobile.css">
 	<title>Оформление заказа</title>
 </head>
 
@@ -173,7 +175,7 @@
 									<img src="./link/img/order_detail/VectorV.svg" alt="V">
 								</div>
 								<p class="header_form_item">Заказ от имени</p>
-								<div class="item_body">
+								<div class="item_body valueName">
 									<div class="form_radio_btn">
 										<input id="radio-1" type="radio" name="status" value="individuals" class="radio_data" >
 										<label for="radio-1" >Физлица</label>
@@ -185,11 +187,187 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="order_form_item">
+								<div class="checked_item_form">
+									<img src="./link/img/order_detail/VectorV.svg" alt="V">
+								</div>
+								<p class="header_form_item">Город получения</p>
+								<div class="item_body">
+									<input type="text" id="city" class="form_imput_order" placeholder="Укажите город" value=""/>
+								</div>
+							</div>
+
+							<div class="order_form_item">
+								<div class="checked_item_form">
+									<img src="./link/img/order_detail/VectorV.svg" alt="V">
+								</div>
+								<p class="header_form_item">Способ получения</p>
+								<div class="item_body methodOfobtaining">
+									<div class="form_radio_btn">
+										<input id="radio_delivery" type="radio" name="delivery" value="delivery_self" class="radio_data">
+										<label for="radio_delivery">
+											Курьерская доставка <span class="br_gap"></span>
+											<span class="p16_Sans_700 ">Бесплатно</span>
+										</label>
+										
+									</div>
+							
+									<div class="form_radio_btn">
+										<input id="radio_delivery_1" type="radio" name="delivery" value="post_rus" class="radio_data">
+										<label for="radio_delivery_1">
+											Почта России<span class="br_gap"></span>
+											<span class="p16_Sans_700 ">400 ₽</span>
+										</label>
+									</div>
+
+									<div class="form_radio_btn">
+										<input id="radio_delivery_2" type="radio" name="delivery" value="postamat" class="radio_data">
+										<label for="radio_delivery_2">Постамат<span class="br_gap"></span>
+										<span class="p16_Sans_700 ">520 ₽</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="order_form_item adres_list">
+								<div class="checked_item_form">
+									<img src="./link/img/order_detail/VectorV.svg" alt="V">
+								</div>
+								<p class="header_form_item">Адрес доставки</p>
+
+
+							</div>
+
+							<div class="order_form_item payment_type" id="payment_type">
+								<div class="checked_item_form">
+									<img src="./link/img/order_detail/VectorV.svg" alt="V">
+								</div>
+								<p class="header_form_item">Оплата</p>
+								<div class="item_body variant_pay">
+									<div class="form_radio_btn">
+										<input id="pay_type_cash" type="radio" name="pay_type" value="cash" class="radio_data pay_data" data-tabs-btn="cash">
+										<label for="pay_type_cash" >Наличные</label>
+									</div>
+							
+									<div class="form_radio_btn">
+										<input id="pay_type_bank_cart" type="radio" name="pay_type" value="bank_cart" class="radio_data pay_data" data-tabs-btn="bank_cart">
+										<label for="pay_type_bank_cart">Банковской картой</label>
+									</div>
+
+									<div class="form_radio_btn">
+										<input id="pay_type_tinkoff" type="radio" name="pay_type" value="tinkoff" class="radio_data pay_data" data-tabs-btn="tinkoff">
+										<label for="pay_type_tinkoff" >Tinkoff</label>
+									</div>
+									<div class="tabs_block">
+
+										<div class="cash_tabs pay_type_tabs" data-tabs="cash">
+											<p class="cart_p_14">
+												Выбрана наличная форма оплаты. Оплата при получении товара
+											</p>
+										</div>
+
+										<div class="bank_cart_tabs pay_type_tabs" data-tabs="bank_cart">
+											<div class="block_number_cart">
+												<div class="number_cart_header">
+													<img src="./link/img/order_detail/Layer 2.svg" alt="Банковская карта" class="cart_header_logo">
+													<div>
+														<img src="./link/img/order_detail/5.2. Оформление заказа   Оплата   Карта.svg" alt="visa" class="cart_icons">
+														<img src="./link/img/order_detail/Group 202.svg" alt="master" class="cart_icons">
+													</div>
+												</div>
+												<div class="input_mask_number">
+													<p class="cart_p_14">
+														Номер карты
+													</p>
+													<input type="text" name="cart_number_1" id="cart_number" class="cart_number" minlength="4" maxlength="4" placeholder="0000" required>
+													<input type="text" name="cart_number_2" id="cart_number_2" class="cart_number" minlength="4" maxlength="4" placeholder="0000" required>
+													<input type="text" name="cart_number_3" id="cart_number_3" class="cart_number" minlength="4" maxlength="4" placeholder="0000" required>
+													<input type="text" name="cart_number_4" id="cart_number_4" class="cart_number" minlength="4" maxlength="4" placeholder="0000" required>
+												</div>
+												<div class="input_mask_date">
+													<p class="cart_p_14">
+														MM / ГГ
+													</p>
+													<input type="text" name="cart_year" id="cart_year" class="cart_date" minlength="2" maxlength="2"
+														placeholder="MM" required>
+														<span class="between_span">/</span>
+													<input type="text" name="cart_month" id="cart_month" class="cart_date" minlength="2" maxlength="2"
+														placeholder="ГГ" required>
+												</div>
+												
+											</div>
+
+											<div class="block_CVV_cart">
+												<div class="header_line">
+													
+												</div>
+												<div class="CVV_input_block">
+													<div>
+													<input type="text" name="cart_cvv" id="cart_cvv" class="cart_cvv" minlength="3" maxlength="3" placeholder="CVV" required>
+													<p class="p15_sans_grey">Три цифры на обороте карты</p>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+										<div class="tinkoff_tabs pay_type_tabs" id="tinkoff_cart_tab" data-tabs="tinkoff">
+											<input type="text" name="tinkoff_cart" id="tinkoff_cart" class="tinkoff_cart" placeholder="Номер карты tinkoff">
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="block_btn_take_order">
+								<button class="order_btn_orange" disabled>
+									Отправить заказ
+								</button>
+							</div>
+							
 						</form>
 					</div>
 
 					<div class="order_data">
-
+						<h3 class="h3_20_sans">
+							Состав заказа
+						</h3>
+						<div class="order_list">
+							<div class="order_item_list">
+								<div class="item_img">
+									<img src="./link/img/order_detail/order_item_photo.svg" alt="Фото">
+								</div>
+								<div class="order_item_data">
+									<p>Orange Flipo M23-912cr душевая система</p>
+								</div>
+							</div>
+							<div class="order_item_list">
+								<div class="item_img">
+									<img src="./link/img/order_detail/order_item_photo.svg" alt="Фото">
+								</div>
+								<div class="order_item_data">
+									<p>Orange Flipo M23-912cr душевая система</p>
+								</div>
+							</div>
+						</div>
+						<div class="order_total_list">
+							<div class="order_list_item">
+								<span class="cart_p_14">Сумма заказа</span>
+								<span class="p_15_bold">25 610 ₽</span>
+							</div>
+							<div class="order_list_item">
+								<span class="cart_p_14">НДС 20% (включено в цену)</span>
+								<span class="p_15_bold">1 420 ₽</span>
+							</div>
+							<div class="order_list_item">
+								<span class="cart_p_14">Скидка</span>
+								<span class="p_15_bold">5 120 ₽</span>
+							</div>
+							<div class="order_list_item">
+								<span class="cart_p_14">К оплате</span>
+								<span class="h3_24_sans">5 120 ₽</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -236,9 +414,11 @@
 			</div>
 		</footer>
 	</div>
+
 	<script src="./link/script/jquery-3.6.0.min.js"></script>
+	<script src="./link/script/autocomplite.js"></script>
 	<script src="./link/script/script.js"></script>
-	<script src="./link/script/script_2.js"></script>
+	
 </body>
 	
 </html>
